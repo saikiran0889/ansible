@@ -1,0 +1,19 @@
+- name: "saikiran"
+  dob: "22-02-1991"
+  age: 35
+  addresses:
+  - doorno: "1-163"
+    street: "PJRroad"
+    city: "Hyderabad"
+    pin: 521325
+    type: "current"
+  - doorno: "1-112"
+    street: "PJRroad"
+    city: "Hyderabad"
+    pin: 521325
+    type: "permanent"
+
+  skills:
+    -java
+    -.net
+    -pyton

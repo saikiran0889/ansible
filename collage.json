@@ -1,0 +1,23 @@
+{
+    "name": "saikiran",
+    "dob": "22-02-1991",
+    "age": "35",
+    "addresses": [
+        {
+            "type": "current",
+            "doorno": "1-163",
+            "state": "ap",
+            "pin": "521325"
+        },
+        {
+            "type": "permanent",
+            "doorno": "1-163",
+            "state": "ap",
+            "pin": "521325"
+        }
+
+
+    ],
+    "skills": ["java", ".net", "Python"]
+
+}
