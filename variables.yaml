@@ -1,0 +1,11 @@
+- name: playbook variables
+  hosts: localhost
+  connecting: local
+  vars:
+    course: ansoble
+    duration: 10hrs
+    traninee: sivekumar
+  tasks:
+    - name: ansibale trining
+      ansibale.builtin.debug:
+      msg: {{ course name: "course", duration time: "duration", triner name: "traninee" }}

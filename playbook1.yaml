@@ -14,5 +14,5 @@
     ansible.builtin.debug:
      msg: "playtask11"
   - name: task12
-    ansible.builtin.debug:
+    ansible.builtin.debug: 
      msg: "playtask22"
