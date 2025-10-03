@@ -1,41 +1,41 @@
-# - name: var preference
-#   hosts: localhost
-#   connection: local
-#   vars:
-#     Name: vars in play book
-#   vars_files:
-#   - varconfig.yaml
-#   vars_prompt:
-#   - name: preferences
-#     prompt: what is your prompt var
-#     private: false
-#   tasks:
-#     name: test task var
-#   vars:
-#     Name: task level preference
-#   ansible.builtin.debug:
-#     msg: "varname: {{ Name }}"
-  
 - name: var preference
   hosts: localhost
   connection: local
-  gather_facts: false
-
   vars:
-    Name: "vars in playbook"
-
+    Name: vars in play book
   vars_files:
-    - varconfig.yaml
-
+  - varconfig.yaml
   vars_prompt:
-    - name: preferences
-      prompt: "What is your prompt var?"
-      private: false
-
+  - name: preferences
+    prompt: what is your prompt var
+    private: false
   tasks:
-    - name: test task var
-      vars:
-        Name: "task level preference"
-      ansible.builtin.debug:
-        msg: "varname: {{ Name }}, preferences: {{ preferences }}"
+    name: test task var
+  vars:
+    Name: task level preference
+  ansible.builtin.debug:
+    msg: "varname: {{ Name }}, prompt: {{ preferences }}"
+  
+# - name: var preference
+#   hosts: localhost
+#   connection: local
+#   gather_facts: false
+
+#   vars:
+#     Name: "vars in playbook"
+
+#   vars_files:
+#     - varconfig.yaml
+
+#   vars_prompt:
+#     - name: preferences
+#       prompt: "What is your prompt var?"
+#       private: false
+
+#   tasks:
+#     - name: test task var
+#       vars:
+#         Name: "task level preference"
+#       ansible.builtin.debug:
+#         msg: "varname: {{ Name }}, preferences: {{ preferences }}"
 
