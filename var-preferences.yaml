@@ -4,7 +4,7 @@
   vars:
     name: vars in play book
   vars_files:
-  - varconfig.yamal
+  - varconfig.yaml
   vars_prompt:
   - name: preferences
     prompt: what is your prompt var
