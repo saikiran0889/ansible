@@ -1,0 +1,9 @@
+- name: variables in files
+  hosts: localhost
+  connection: local
+  vars:
+    varconfig.yaml
+  tasks:
+  - name: pint variables
+  ansible.builtin.debug:
+    msg: " course name: {{ course }}, duration time: {{ duration }}, triner name: {{ trinee }}"
