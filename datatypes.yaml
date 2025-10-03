@@ -15,4 +15,4 @@
   tasks:
   - name: print the datatypes
     ansible.builtin.debug:
-      msg: " coursename: {{ course }}, duration: {{ duration }}"
+      msg: " coursename: {{ course }}, duration: {{ duration }}, is live: {{ is_live }}, tools are: {{ tools }}"
