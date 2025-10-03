@@ -6,15 +6,15 @@
   vars_files:
   - varconfig.yaml
   vars_prompt:
-  - name: preferences
-    prompt: what is your prompt var
+  - name: Name
+    prompt: what is your prompt name
     private: false
   tasks:
     name: test task var
   vars:
-    Name: task level preference
+    NAME: task level preference
   ansible.builtin.debug:
-    msg: "vartaskname: {{ Name }}, prompt: {{ preferences }}"
+    msg: "vartaskname: {{ NAME }}"
   
 # - name: var preference
 #   hosts: localhost
