@@ -1,0 +1,7 @@
+- name: varsinventory
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: vars in inventoey
+    ansible.builtin.debug:
+      msg: " course name: {{ course}}, duration in: {{ duration}}, trinee name: {{ trinee }}"
