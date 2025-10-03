@@ -3,17 +3,17 @@
   connection: local
   vars:
     Name: vars in play book
-  vars_files:
-  - varconfig.yaml
-  vars_prompt:
-  - name: Name
-    prompt: what is your prompt name
-    private: false
+  # vars_files:
+  # - varconfig.yaml
+  # vars_prompt:
+  # - name: Name
+  #   prompt: what is your prompt name
+  #   private: false
   tasks:
     name: test task var
-  vars:
-    NAME: task level preference
-  ansible.builtin.debug:
+  # vars:
+  #   NAME: task level preference
+  # ansible.builtin.debug:
     msg: "vartaskname: {{ NAME }}"
   
 # - name: var preference
