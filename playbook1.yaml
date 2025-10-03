@@ -5,7 +5,7 @@
     ansible.builtin.debug:
      msg: "playtask1"
   - name: task1
-    ansible.builtin.debug
+    ansible.builtin.debug:
      msg: "playtask2"
 - name: playbook2
   hosts: frontend
@@ -14,5 +14,5 @@
     ansible.builtin.debug:
      msg: "playtask11"
   - name: task12
-    ansible.builtin.debug
+    ansible.builtin.debug:
      msg: "playtask22"
