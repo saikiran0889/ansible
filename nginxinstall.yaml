@@ -4,5 +4,7 @@
   tasks:
   - name: install niginx if the OS is redhat
     ansible.builtin.dnf:
-      msg: nginx has been succussfully installed
+    name: nginx
+    state: latest
+      # msg: nginx has been succussfully installed
     when: ansible_os_family == "redhat" 
