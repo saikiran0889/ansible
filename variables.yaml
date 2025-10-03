@@ -7,5 +7,5 @@
     traninee: sivekumar
   tasks:
     - name: ansibales trining
-      ansibale.builtin.debug:
+      ansible.builtin.debug:
         msg: "course name: {{ course }}, duration time: {{ duration }}, triner name: {{ traninee }}"
