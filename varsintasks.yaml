@@ -1,0 +1,13 @@
+- name: playbook variables
+  hosts: localhost
+  connection: local
+  vars:
+    course: ansoble
+    duration: 10hrs
+    traninee: sivekumar
+  tasks:
+    - name: ansibales trining
+      vars: 
+        course: aws in devops
+      ansible.builtin.debug:
+        msg: "course name: {{ course }}, duration time: {{ duration }}, triner name: {{ traninee }}"
