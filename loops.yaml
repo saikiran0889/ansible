@@ -5,7 +5,7 @@
   - name: print loops
     ansible.builtin.debug:
       msg: "hello {{ item }}"
-    loops:
+    loop:
     - saikiran
     - lakshmi 
     - durga
