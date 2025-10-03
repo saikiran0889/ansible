@@ -14,7 +14,7 @@
   # vars:
   #   NAME: task level preference
     ansible.builtin.debug:
-    msg: "vartaskname: {{ NAME }}"
+    msg: "vartaskname: {{ Name }}"
   
 # - name: var preference
 #   hosts: localhost
