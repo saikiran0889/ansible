@@ -1,0 +1,19 @@
+- name: var preference
+  hosts: localhost
+  connection: local
+  vars:
+    name: "vars in play book"
+  vars_files:
+  - varconfig.yamal
+  vars_prompt:
+  - name: preferences
+    prompt: what is your prompt var
+    private: false
+  tasks:
+    name: "test task var"
+  vars:
+    Name: "task level preference"
+  ansible.builtin.debug:
+    msg: "name: {{ Name }}"
+  
+
