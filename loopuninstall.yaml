@@ -1,6 +1,7 @@
 - name: uninstall packages
   hosts: localhost
   connection: local
+  become:yes
   tasks:
   - name: uninstallpackgaes
     ansible.builtin.package:
