@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   vars:
-    name: "vars in play book"
+    name: vars in play book
   vars_files:
   - varconfig.yamal
   vars_prompt:
