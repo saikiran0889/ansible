@@ -5,8 +5,8 @@
   - name: username
     prompt: enter your username
     private: false
-  - password: password
-    prompt: enter your password
+  # - password: password
+  #   prompt: enter your password
   - tasks: 
     name: print credentials
     ansible.builtin.debug:
