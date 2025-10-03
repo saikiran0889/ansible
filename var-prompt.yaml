@@ -4,7 +4,7 @@
   vars_prompt:
   - name: username
     prompt: enter your username
-    pricate: false
+    private: false
   - password: password
     prompt: enter your password
   - tasks: 
