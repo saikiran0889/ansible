@@ -1,0 +1,18 @@
+- name: playbook1
+  hosts: frontend
+  tasks:
+  - name: task1
+    ansible.builtin.debug:
+     msg: "playtask1"
+  - name: task1
+    ansible.builtin.debug
+     msg: "playtask2"
+- name: playbook2
+  hosts: frontend
+  tasks:
+  - name: task11
+    ansible.builtin.debug:
+     msg: "playtask11"
+  - name: task12
+    ansible.builtin.debug
+     msg: "playtask22"
