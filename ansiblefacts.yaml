@@ -1,0 +1,7 @@
+- name: ansible farctss
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: farcts
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
