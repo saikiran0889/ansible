@@ -1,6 +1,6 @@
 - name: playbook variables
   hosts: localhost
-  connecting: local
+  connection: local
   vars:
     course: ansoble
     duration: 10hrs
