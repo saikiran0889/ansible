@@ -1,6 +1,7 @@
 - name: install nginx
   hosts: localhost
   connection: local
+  become: yes
   tasks:
   - name: install niginx if the OS is redhat
     ansible.builtin.dnf:
