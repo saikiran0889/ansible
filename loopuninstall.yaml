@@ -1,0 +1,12 @@
+- name: uninstall packages
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: uninstallpackgaes
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: "{{ team: }}""
+    loop:
+    - {{ name: "nginx", state: "absent" }}
+    - {{ name: "mysql", state: "absent" }}
+    - {{ name: "zip", state: "latest" }}
