@@ -10,9 +10,9 @@
     prompt: what is your prompt var
     private: false
   tasks:
-    name: "test task var"
+    name: test task var
   vars:
-    Name: "task level preference"
+    Name: task level preference
   ansible.builtin.debug:
     msg: "name: {{ Name }}"
   
