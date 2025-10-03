@@ -4,8 +4,8 @@
   tasks:
   - name: uninstallpackgaes
     ansible.builtin.package:
-      name: "{{ item }}"
-      state: "{{ team: }}""
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
     - {{ name: "nginx", state: "absent" }}
     - {{ name: "mysql", state: "absent" }}
