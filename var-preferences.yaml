@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   vars:
-    Name: vars in play book
+    NAME: vars in play book
   # vars_files:
   # - varconfig.yaml
   # vars_prompt:
@@ -11,10 +11,10 @@
   #   private: false
   tasks:
     name: test task var
-  vars:
-   NAME: task level preference
-  ansible.builtin.debug:
-    msg: "vartaskname: {{ Name }}"
+  # vars:
+  #  NAME: task level preference
+    ansible.builtin.debug:
+      msg: "Name: {{ NAME }}"
   
 # - name: var preference
 #   hosts: localhost
