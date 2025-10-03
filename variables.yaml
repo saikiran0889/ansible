@@ -6,6 +6,6 @@
     duration: 10hrs
     traninee: sivekumar
   tasks:
-    - name: ansibale trining
+    - name: ansibales trining
       ansibale.builtin.debug:
         msg: "course name: {{ course }}, duration time: {{ duration }}, triner name: {{ traninee }}"
