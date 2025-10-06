@@ -4,4 +4,4 @@
   tasks:
   - name: default finctions
     ansible.builtin.debug:
-      msg: "test the functions {{ name }}"
+      msg: "test the functions {{ name | default('saikiran') }}"
