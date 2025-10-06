@@ -8,10 +8,10 @@
       environment: dev
 
     listtags:
-    - app: aws
-      env: dev
-    - app: azure
-      env: prod
+    - key: aws
+      value: dev
+    - key: azure
+      value: prod
   tasks:
   - name: default finctions
     ansible.builtin.debug:
