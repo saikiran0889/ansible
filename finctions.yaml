@@ -30,3 +30,7 @@
   - name: convert to list tags
     ansible.builtin.debug:
       msg: " tags: {{ listtags | items2dict }}"
+  tasks:
+  - name: read yaml file and store in variable
+    ansible.builtin.set_fact:
+      studentsyaml: "{{ lookup( 'file', 'playbook.yaml') | from_yaml }}"
