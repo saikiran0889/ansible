@@ -3,6 +3,9 @@
   connection: local
   vars:
     cource: c, C++, java, python, .net
+    tags:
+      application: devops
+      environment: dev
   tasks:
   - name: default finctions
     ansible.builtin.debug:
@@ -12,3 +15,8 @@
   - name: convert string to List
     ansible.builtin.debug:
       msg: "cources are: {{ cource | split(',') }}"
+
+  tasks:
+  - name: conerts to List
+    ansible.builtin.debug:
+      msg: " tags are: {{ tags | dict2items }}"
