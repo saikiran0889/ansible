@@ -10,7 +10,7 @@
     listtags:
     - app: aws
       env: dev
-      app: azure
+    - app: azure
       env: prod
   tasks:
   - name: default finctions
