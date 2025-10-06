@@ -1,7 +1,14 @@
 - name: functions
   hosts: localhost
   connection: local
+  vars:
+    cource: c, C++, java, python, .net
   tasks:
   - name: default finctions
     ansible.builtin.debug:
       msg: "Hello {{ name | default('saikiran') }}"
+
+  tasks:
+  - name: convert string to List
+    ansible.builtin.debug:
+      msg: "cources are: {{ cource | split(',') }}"
