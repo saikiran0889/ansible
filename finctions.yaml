@@ -6,6 +6,12 @@
     tags:
       application: devops
       environment: dev
+
+    listtags:
+    - app: aws
+      env: dev
+      app: azure
+      env: prod
   tasks:
   - name: default finctions
     ansible.builtin.debug:
@@ -20,3 +26,7 @@
   - name: conerts to List
     ansible.builtin.debug:
       msg: " tags are: {{ tags | dict2items }}"
+  tasks:
+  - name: convert to list tags
+    ansible.builtin.debug:
+      msg: " tags: {{ listtags | items2dict }}"
