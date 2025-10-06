@@ -2,6 +2,7 @@
   hosts: localhost
   connection: local
   vars:
+    name: saikiran buddhs
     cource: c, C++, java, python, .net
     tags:
       application: devops
@@ -41,4 +42,9 @@
     ansible.builtin.copy:
       dest: ./playbook-file.json
       content: "{{ studentsyaml | to_nice_json }}"
+
+  tasks:
+  - name: conver to upper coursename
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
   
