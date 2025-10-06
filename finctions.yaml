@@ -37,3 +37,8 @@
   - name: convert to to_json
     ansible.builtin.debug:
       msg: "{{ studentsyaml | to_json }}"
+  - name: save in a file
+    ansible.builtin.copy:
+      dest: ./playbook-file.json
+      content: "{{ studentsyaml | to_nice_json }}"
+  
