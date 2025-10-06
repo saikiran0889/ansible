@@ -1,0 +1,10 @@
+- name: greaterthan10
+  hosts: localhost
+  connection: local
+  vars:
+    number: 5
+  tasks:
+  - name: given number is grate than 10
+    ansible.builtin.debug:
+      msg: " given {{ number }} greated than 10"
+    when: number < 10

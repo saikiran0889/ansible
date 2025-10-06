@@ -1,0 +1,7 @@
+- name: functions
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: default finctions
+    ansible.builtin.debug:
+      msg: "test the functions {{ name }}"
