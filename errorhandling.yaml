@@ -9,4 +9,4 @@
     ignore_error: true
   - name: print the error message
     ansible.builtin.debug:
-    msg: "{{ user_output }}"
+      msg: "{{ user_output }}"
